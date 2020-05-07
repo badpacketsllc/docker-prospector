@@ -11,7 +11,7 @@ You can contribute in several different ways:
 
 ### Report bugs
 
-Report bugs at https://github.com/badpacketsllc/prospector/issues.
+Report bugs at https://github.com/badpacketsllc/docker-prospector/issues.
 
 If you are reporting a bug, please include:
 
@@ -37,18 +37,18 @@ suite or wherever you feel is appropriate.
 Setting up a development environment
 ------------------------------------
 
-1. Fork the `prospector` repo on GitHub.
+1. Fork the `docker-prospector` repo on GitHub.
 2. Clone your fork locally:
 
 ```shell
-    $ git clone git@github.com:your_name_here/prospector.git
+$ git clone git@github.com:your_name_here/prospector.git
 ```
 
 3. [Install docker](https://docs.docker.com/get-started/).
 
 4. Create a branch for local development
 ```shell
-    $ git checkout -b description-of-bug-or-feature
+$ git checkout -b description-of-bug-or-feature
 ````
 
 Now you can make your changes locally.
@@ -56,16 +56,19 @@ Now you can make your changes locally.
 5. When you're done making changes, check that your changes pass the tests:
 
 ```shell
-    $ pip3 install tox
-    $ tox
+$ pip3 install --user pipenv
+$ pipenv install --dev
+$ pipenv run yamllint .
+$ pipenv run prospector
+$ pipenv run pytest
 ```
 
 6. Commit your changes and push your branch to GitHub:
 
 ```shell
-    $ git add .
-    $ git commit -m "Your detailed description of your changes."
-    $ git push origin name-of-your-bugfix-or-feature
+$ git add .
+$ git commit -m "Your detailed description of your changes."
+$ git push origin name-of-your-bugfix-or-feature
 ```
 
 7. Submit a pull request through the GitHub website.
@@ -74,4 +77,5 @@ Responsibilities
 ----------------
 
 1. Create issues for any bugs, changes or enhancements.
-2. Be welcoming and nice as outlined in our Code of Conduct (https://www.contributor-covenant.org/version/1/4/code-of-conduct).
+2. Be welcoming and nice as outlined in our
+[Code of Conduct](https://github.com/badpacketsllc/docker-prospector/blob/master/CODE_OF_CONDUCT.md).
