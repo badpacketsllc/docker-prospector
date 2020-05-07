@@ -1,8 +1,8 @@
 # prospector
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/badpacketsllc/prospector/graphs/commit-activity)
-[![Build status](https://img.shields.io/travis/com/badpacketsllc/prospector.svg?style=flat)](https://travis-ci.com/badpacketsllc/prospector)
-[![Ansible role downloads](https://img.shields.io/docker/pulls/badpacketsllc/prospector)](https://hub.docker.com/r/badpacketsllc/prospector)
-[![License](https://img.shields.io/github/license/badpacketsllc/prospector?style=flat)](https://github.com/badpacketsllc/prospector/blob/master/LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/badpacketsllc/docker-prospector/graphs/commit-activity)
+[![Build status](https://img.shields.io/travis/com/badpacketsllc/docker-prospector.svg?style=flat)](https://travis-ci.com/badpacketsllc/docker-prospector)
+[![Docker image download](https://img.shields.io/docker/pulls/badpacketsllc/prospector)](https://hub.docker.com/r/badpacketsllc/prospector)
+[![License](https://img.shields.io/github/license/badpacketsllc/docker-prospector?style=flat)](https://github.com/badpacketsllc/docker-prospector/blob/master/LICENSE)
 [![Follow us on twitter](https://img.shields.io/twitter/follow/bad_packets.svg?style=social)](https://twitter.com/bad_packets/)
 
 Prospector docker container image
@@ -18,12 +18,12 @@ Usage
 To run `prospector` against code in the current directory using the image
 from Docker Hub:
 
-`$ docker run --rm -it  -v $PWD:/data:ro,Z badpacketsllc/prospector prospector`
+`$ docker run --rm -it  -v ${PWD}:/data:ro,Z badpacketsllc/prospector`
 
 To run `prospector` against code in the current directory using the image
 built locally from source:
 
-`$ docker run --rm -it  -v $PWD:/data:ro,Z prospector`
+`$ docker run --rm -it  -v ${PWD}:/data:ro,Z prospector`
 
 Running tests
 -------------
@@ -48,9 +48,9 @@ Contributing
 ------------
 
 Contributions are encouraged! Learn how to contribute by reading
-[CONTRIBUTING.md](https://github.com/badpacketsllc/prospector/blob/master/CONTRIBUTING.md).
+[CONTRIBUTING.md](https://github.com/badpacketsllc/docker-prospector/blob/master/CONTRIBUTING.md).
 Please be nice and follow our
-[Code of Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct).
+[Code of Conduct](https://github.com/badpacketsllc/docker-prospector/blob/master/CODE_OF_CONDUCT.md).
 
 License
 -------
