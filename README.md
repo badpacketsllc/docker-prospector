@@ -1,4 +1,4 @@
-# prospector
+# docker-prospector
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/badpacketsllc/docker-prospector/graphs/commit-activity)
 [![Build status](https://img.shields.io/travis/com/badpacketsllc/docker-prospector.svg?style=flat)](https://travis-ci.com/badpacketsllc/docker-prospector)
 [![Docker image download](https://img.shields.io/docker/pulls/badpacketsllc/prospector)](https://hub.docker.com/r/badpacketsllc/prospector)
