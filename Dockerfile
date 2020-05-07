@@ -10,11 +10,11 @@
 #
 # To run `prospector` against code in the current directory using the image
 # from Docker Hub:
-# $ docker run --rm -it  -v $PWD:/data:ro,Z badpacketsllc/prospector prospector
+# $ docker run --rm -it  -v ${PWD}:/data:ro,Z badpacketsllc/prospector
 #
 # To run `prospector` against code in the current directory using the image
 # built locally from source
-# $ docker run --rm -it  -v $PWD:/data:ro,Z prospector
+# $ docker run --rm -it  -v ${PWD}:/data:ro,Z prospector
 #
 # Copyright 2020 Bad Packets LLC
 # Licensed under a GPLv2 license
