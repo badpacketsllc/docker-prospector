@@ -19,7 +19,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import subprocess
 import os
-import logging
 import pytest
 import testinfra
 
@@ -31,24 +30,7 @@ def host(request):  # pylint:disable=unused-argument
 
     docker_base_command = ['docker', 'run', '-d']
     pwd = os.getcwd()
-    volume_mount_option = []
-
-    try:
-        if os.environ['CI']:
-            logging.info('We are in a CI environment. Not configuring a '
-                         'volume.')
-    except KeyError:
-        logging.info('We are in a local testing environment. Mounting ${PWD} '
-                     'in the testing container.')
-        volume_mount_option = ['-v', f'{pwd}:/app:ro,Z']
-
-    try:
-        if os.environ['ACT']:
-            logging.info('We are in an `act` CI environment. Mounting ${PWD} '
-                         'in the testing container.')
-            volume_mount_option = ['-v', f'{pwd}:/app:ro,Z']
-    except KeyError:
-        pass
+    volume_mount_option = ['-v', f'{pwd}:/app:ro,Z']
 
     docker_id = subprocess.check_output(docker_base_command +
                                         volume_mount_option +
