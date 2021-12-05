@@ -56,11 +56,10 @@ Now you can make your changes locally.
 5. When you're done making changes, check that your changes pass the tests:
 
 ```shell
-$ pip3 install --user pipenv
-$ pipenv install --dev
-$ pipenv run yamllint .
-$ pipenv run prospector
-$ pipenv run pytest
+$ pip3 install -r requirements-dev.txt
+$ yamllint .
+$ prospector ./test/test_build.py
+$ pytest
 ```
 
 6. Commit your changes and push your branch to GitHub:
