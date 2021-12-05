@@ -4,9 +4,9 @@ name: ci
   pull_request:
   push:
     branches:
-      - $default-branch
+      - master
   schedule:
-    - cron: $cron-weekly
+    - cron: "0 4 * * 3"
 
 
 jobs:
