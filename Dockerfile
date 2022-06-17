@@ -1,7 +1,6 @@
 # Run prospector static analysis using docker.
-# Copyright (C) 2020-2022 Bad Packets, LLC
-# https://www.badpackets.net
-# Licensed under a GPLv2 license
+# Copyright (C) 2022 Okta, Inc.
+# Licensed under the Apache License 2.0
 #
 # To run `prospector` against code in the current directory using the image
 # from Docker Hub:
